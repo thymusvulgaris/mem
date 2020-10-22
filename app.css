@@ -1,0 +1,668 @@
+@keyframes shake-alpha {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake-beta {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes pulse-alpha {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse-beta {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fade-in-one-alpha {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-one-beta {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-zero-alpha {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-zero-beta {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-in-out {
+    from {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (orientation: landscape) {
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 88vh;
+    }
+
+    .over-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 88vh;
+    }
+
+    .single-panel {
+        flex-basis: 100%;
+        flex-direction: column;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 86vh;
+    }
+
+    .item-neutral-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-neutral-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-incorrect-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        animation: shake-alpha;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-incorrect-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        animation: shake-beta;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-correct-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        animation: pulse-alpha;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-correct-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        animation: pulse-beta;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-one-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 10em;
+        text-align: center;
+        animation-name: fade-in-one-alpha;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-one-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 10em;
+        text-align: center;
+        animation-name: fade-in-one-beta;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-zero-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 10em;
+        text-align: center;
+        animation-name: fade-in-zero-alpha;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-zero-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 10em;
+        text-align: center;
+        animation-name: fade-in-zero-beta;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .board-panel {
+        display: flex;
+        flex-basis: 50%;
+        vertical-align: middle;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .title {
+        color: black;
+        font-weight: bold;
+        font-size: 9em;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .start {
+        color: black;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        font-style: italic;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .question-mark-display {
+        color: black;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-right: 1%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+    .instructions {
+        color: black;
+        font-weight: bold;
+        font-size: 1.7em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding: 5% 5% 1% 5%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+
+    .floor-display {
+        color: black;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 1%;
+        font-style: italic;
+    }
+
+    .seconds-left-display {
+        color: black;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-right: 1%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+    .over-floor-display {
+        color: black;
+        font-weight: bold;
+        font-size: 6em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .try-again-display {
+        color: black;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 7vh;
+    }
+
+    .instructions-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 88vh;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    .single-panel {
+        flex-basis: 100%;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 86vh;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 86vh;
+    }
+
+    .board-panel {
+        display: flex;
+        flex-basis: 100%;
+        vertical-align: middle;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item-neutral-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-neutral-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-incorrect-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        animation: shake-alpha;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-incorrect-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        animation: shake-beta;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-correct-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        animation: pulse-alpha;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .item-correct-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 12em;
+        text-align: center;
+        animation: pulse-beta;
+        animation-duration: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-one-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 20em;
+        text-align: center;
+        animation-name: fade-in-one-alpha;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-one-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 20em;
+        text-align: center;
+        animation-name: fade-in-one-beta;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-zero-alpha {
+        color: black;
+        font-weight: bold;
+        font-size: 20em;
+        text-align: center;
+        animation-name: fade-in-zero-alpha;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .sequence-card-zero-beta {
+        color: black;
+        font-weight: bold;
+        font-size: 20em;
+        text-align: center;
+        animation-name: fade-in-zero-beta;
+        animation-duration: 3s;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .start {
+        color: black;
+        font-weight: bold;
+        font-size: 4.5em;
+        font-style: italic;
+        text-align: center;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .title {
+        color: black;
+        font-weight: bold;
+        font-size: 15em;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .question-mark-display {
+        color: black;
+        font-weight: bold;
+        font-size: 3.8em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-right: 1%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+    .instructions {
+        color: black;
+        font-weight: bold;
+        font-size: 2.7em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding: 1% 5% 1% 5%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+    .floor-display {
+        color: black;
+        font-weight: bold;
+        font-size: 2.4em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 1%;
+        font-style: italic;
+    }
+
+    .top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .seconds-left-display {
+        color: black;
+        font-weight: bold;
+        font-size: 2.4em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding-right: 1%;
+        font-style: italic;
+        margin-left: auto;
+    }
+
+    .over-floor-display {
+        color: black;
+        font-weight: bold;
+        font-size: 8em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .try-again-display {
+        color: black;
+        font-weight: bold;
+        font-size: 4em;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+        animation-name: fade-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .over-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 88vh;
+    }
+
+    .instructions-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: stretch;
+        width: 100%;
+        height: 88vh;
+    }
+
+}
