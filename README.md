@@ -1,7 +1,17 @@
-### Usage
+# Mem
 
+Mem is a simple game that trains your memory with increasing difficulty.
+
+## Setup
+
+Install dependencies
 ```
-elm make src/App.elm --output=app.js
+$ asdf install
 ```
 
-Then open `index.html`.
+Build static page
+```
+$ sh build.sh
+```
+
+Then open `dist/index.html`.
